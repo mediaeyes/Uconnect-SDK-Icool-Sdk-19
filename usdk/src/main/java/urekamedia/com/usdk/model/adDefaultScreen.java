@@ -1,20 +1,12 @@
 package urekamedia.com.usdk.model;
 
-public class adVideo {
+public class adDefaultScreen {
     private String time_show;
     private String type_ads;
     private String vast_xml;
     private String banner_url;
 
-    public adVideo(String time_show, String type_ads, String vast_xml, String banner_url) {
-        this.time_show = time_show;
-        this.type_ads = type_ads;
-        this.vast_xml = vast_xml;
-        this.banner_url = banner_url;
-    }
-
-    public adVideo() {
-
+    public adDefaultScreen() {
     }
 
     public String getTime_show() {

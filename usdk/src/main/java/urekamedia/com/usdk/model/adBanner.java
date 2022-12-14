@@ -3,37 +3,21 @@ package urekamedia.com.usdk.model;
 public class adBanner {
     private int id;
     private String position;
-    private int position_type;
-    private int position_x;
-    private int position_y;
-    private int width;
-    private int height;
-    private int status;
-    private int type_ads;
+    private String position_type;
+    private String position_x;
+    private String position_y;
+    private String width;
+    private String height;
+    private String status;
+    private String type_ads;
     private String code_unit;
     private String code_position;
-    private int time_show;
-    private int time;
+    private String time_show;
+    private String time;
     private String device;
-    private int sendPostDevice;
-
-    public adBanner(int id, String position, int position_type, int position_x, int position_y, int width, int height, int status, int type_ads, String code_unit, String code_position, int time_show, int time, String device, int sendPostDevice) {
-        this.id = id;
-        this.position = position;
-        this.position_type = position_type;
-        this.position_x = position_x;
-        this.position_y = position_y;
-        this.width = width;
-        this.height = height;
-        this.status = status;
-        this.type_ads = type_ads;
-        this.code_unit = code_unit;
-        this.code_position = code_position;
-        this.time_show = time_show;
-        this.time = time;
-        this.device = device;
-        this.sendPostDevice = sendPostDevice;
-    }
+    private String sendPostDevice;
+    private String vast_xml;
+    private String banner_url;
 
     public int getId() {
         return id;
@@ -51,59 +35,59 @@ public class adBanner {
         this.position = position;
     }
 
-    public int getPosition_type() {
+    public String getPosition_type() {
         return position_type;
     }
 
-    public void setPosition_type(int position_type) {
+    public void setPosition_type(String position_type) {
         this.position_type = position_type;
     }
 
-    public int getPosition_x() {
+    public String getPosition_x() {
         return position_x;
     }
 
-    public void setPosition_x(int position_x) {
+    public void setPosition_x(String position_x) {
         this.position_x = position_x;
     }
 
-    public int getPosition_y() {
+    public String getPosition_y() {
         return position_y;
     }
 
-    public void setPosition_y(int position_y) {
+    public void setPosition_y(String position_y) {
         this.position_y = position_y;
     }
 
-    public int getWidth() {
+    public String getWidth() {
         return width;
     }
 
-    public void setWidth(int width) {
+    public void setWidth(String width) {
         this.width = width;
     }
 
-    public int getHeight() {
+    public String getHeight() {
         return height;
     }
 
-    public void setHeight(int height) {
+    public void setHeight(String height) {
         this.height = height;
     }
 
-    public int getStatus() {
+    public String getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(String status) {
         this.status = status;
     }
 
-    public int getType_ads() {
+    public String getType_ads() {
         return type_ads;
     }
 
-    public void setType_ads(int type_ads) {
+    public void setType_ads(String type_ads) {
         this.type_ads = type_ads;
     }
 
@@ -123,19 +107,19 @@ public class adBanner {
         this.code_position = code_position;
     }
 
-    public int getTime_show() {
+    public String getTime_show() {
         return time_show;
     }
 
-    public void setTime_show(int time_show) {
+    public void setTime_show(String time_show) {
         this.time_show = time_show;
     }
 
-    public int getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(int time) {
+    public void setTime(String time) {
         this.time = time;
     }
 
@@ -147,11 +131,27 @@ public class adBanner {
         this.device = device;
     }
 
-    public int getSendPostDevice() {
+    public String getSendPostDevice() {
         return sendPostDevice;
     }
 
-    public void setSendPostDevice(int sendPostDevice) {
+    public void setSendPostDevice(String sendPostDevice) {
         this.sendPostDevice = sendPostDevice;
+    }
+
+    public String getVast_xml() {
+        return vast_xml;
+    }
+
+    public void setVast_xml(String vast_xml) {
+        this.vast_xml = vast_xml;
+    }
+
+    public String getBanner_url() {
+        return banner_url;
+    }
+
+    public void setBanner_url(String banner_url) {
+        this.banner_url = banner_url;
     }
 }

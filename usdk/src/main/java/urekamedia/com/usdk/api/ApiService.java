@@ -13,7 +13,6 @@ import retrofit2.http.Query;
 import urekamedia.com.usdk.UrekaSdk;
 import urekamedia.com.usdk.model.adBanner;
 import urekamedia.com.usdk.model.adConfig;
-import urekamedia.com.usdk.model.adLuckyDraw;
 import urekamedia.com.usdk.service.NetworkConnectionInterceptor;
 import urekamedia.com.usdk.utils.Constants;
 
@@ -24,7 +23,7 @@ public interface ApiService {
             .create();
 
     ApiService apiservice = new Retrofit.Builder()
-            .baseUrl(Constants.API_CONFIG)
+            .baseUrl(Constants.DELIVERY)
             .addConverterFactory(GsonConverterFactory.create(gson))
             .client(rc.getClient())
             .build()
@@ -32,22 +31,23 @@ public interface ApiService {
 
     @GET(Constants.API_ROUTE_AD_CONFIG)
     Call<adConfig> getAdConfig(
+            @Query("partner_id") String partner_id,
+            @Query("ktv_id") String ktv_id,
+            @Query("codeNumber") String codeNumber,
+            @Query("position") int position,
+            @Query("type_show") String type_show,
             @Query("times") int times,
-            @Query("codeNumber") String codeNumber
+            @Query("version") String version
     );
 
     @GET(Constants.API_ROUTE_AD_BANNER)
     Call<adBanner> getAdBanner(
-            @Query("times") int times,
-            @Query("codeNumber") String codeNumber
-    );
-
-    @GET(Constants.API_ROUTE_GET_LUCKYDRAW)
-    Call<adLuckyDraw> getluckydraw(
+            @Query("partner_id") String partner_id,
             @Query("ktv_id") String ktv_id,
-            @Query("deviceid") String deviceid,
+            @Query("codeNumber") String codeNumber,
+            @Query("times") int times,
             @Query("song_id") String song_id,
-            @Query("auto") boolean auto
+            @Query("version") String version
     );
 }
 

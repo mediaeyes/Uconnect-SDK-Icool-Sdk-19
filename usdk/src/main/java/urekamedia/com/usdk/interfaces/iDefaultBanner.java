@@ -1,8 +1,8 @@
 package urekamedia.com.usdk.interfaces;
 
-import urekamedia.com.usdk.model.adDefaultBanner;
+import urekamedia.com.usdk.model.adDefaultScreen;
 
 public interface iDefaultBanner {
-    void onSuccess(adDefaultBanner defaultBanner);
-    void onError(Exception e);
+    void onSuccess(adDefaultScreen defaultBanner);
+    void onError(Throwable t);
 }
