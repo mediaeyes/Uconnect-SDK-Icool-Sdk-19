@@ -11,6 +11,7 @@ import urekamedia.com.usdk.interfaces.iVideo;
 import urekamedia.com.usdk.model.adDefaultScreen;
 import urekamedia.com.usdk.model.adInSong;
 import urekamedia.com.usdk.model.adVideo;
+import urekamedia.com.usdk.model.adVideoPreroll;
 
 public class UrekaSdk {
     private static Context mContext;
@@ -41,15 +42,12 @@ public class UrekaSdk {
 
     public static void getPrerollVideo(String ktv_id, String device_id, Context context, @Nullable final iVideo callback) {
         setContext(context);
-        int position = 3;
-        String type_show = "ktvcenter";
-        int time = 3;
 
-        getAdConfig.getConfigVideo(ktv_id, device_id, position, type_show, time, new iVideo(){
+        getAdConfig.getConfigVideo(ktv_id, device_id, new iVideo(){
 
             @Override
-            public void onSuccess(adVideo prerollVideo) {
-                callback.onSuccess(prerollVideo);
+            public void onSuccess(adVideoPreroll videoPreroll) {
+                callback.onSuccess(videoPreroll);
             }
 
             @Override

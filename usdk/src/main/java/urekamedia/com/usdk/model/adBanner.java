@@ -18,6 +18,15 @@ public class adBanner {
     private String sendPostDevice;
     private String vast_xml;
     private String banner_url;
+    private int issetItem;
+
+    public int getIssetItem() {
+        return issetItem;
+    }
+
+    public void setIssetItem(int issetItem) {
+        this.issetItem = issetItem;
+    }
 
     public int getId() {
         return id;

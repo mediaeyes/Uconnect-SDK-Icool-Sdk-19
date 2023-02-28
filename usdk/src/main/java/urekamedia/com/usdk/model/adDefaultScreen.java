@@ -5,6 +5,24 @@ public class adDefaultScreen {
     private String type_ads;
     private String vast_xml;
     private String banner_url;
+    private int issetItem;
+    private int sound;
+
+    public int getIssetItem() {
+        return issetItem;
+    }
+
+    public void setIssetItem(int issetItem) {
+        this.issetItem = issetItem;
+    }
+
+    public int getSound() {
+        return sound;
+    }
+
+    public void setSound(int sound) {
+        this.sound = sound;
+    }
 
     public adDefaultScreen() {
     }

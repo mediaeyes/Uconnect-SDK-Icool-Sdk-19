@@ -13,6 +13,7 @@ import retrofit2.http.Query;
 import urekamedia.com.usdk.UrekaSdk;
 import urekamedia.com.usdk.model.adBanner;
 import urekamedia.com.usdk.model.adConfig;
+import urekamedia.com.usdk.model.adVideoPreroll;
 import urekamedia.com.usdk.service.NetworkConnectionInterceptor;
 import urekamedia.com.usdk.utils.Constants;
 
@@ -47,6 +48,14 @@ public interface ApiService {
             @Query("codeNumber") String codeNumber,
             @Query("times") int times,
             @Query("song_id") String song_id,
+            @Query("version") String version
+    );
+
+    @GET(Constants.API_ROUTE_VIDEO_PREROLL)
+    Call<adVideoPreroll> adVideoPreroll(
+            @Query("partner_id") String partner_id,
+            @Query("ktv_id") String ktv_id,
+            @Query("codeNumber") String codeNumber,
             @Query("version") String version
     );
 }

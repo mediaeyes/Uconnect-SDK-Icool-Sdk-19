@@ -28,6 +28,7 @@ public class getAdBanner {
                     inSong.setTime_show(banner.getTime_show());
                     inSong.setHeight(banner.getHeight());
                     inSong.setWidth(banner.getWidth());
+                    inSong.setIssetItem(banner.getIssetItem());
                     if (type.equals("video")) {
                         inSong.setBanner_url(banner.getVast_xml());
                         inSong.setType_ads("video");

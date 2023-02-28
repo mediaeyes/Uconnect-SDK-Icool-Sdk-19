@@ -1,6 +1,6 @@
 package urekamedia.com.usdk.model;
 
-public class adConfig {
+public class adVideoPreroll {
     private int id;
     private String ktv_id;
     private String device;
@@ -13,9 +13,7 @@ public class adConfig {
     private String time_show;
     private String type_ads;
     private String vast_xml;
-    private String banner_url;
     private String status;
-    private String sendPostDevice;
     private int issetItem;
     private int sound;
 
@@ -33,6 +31,10 @@ public class adConfig {
 
     public void setSound(int sound) {
         this.sound = sound;
+    }
+
+    public adVideoPreroll() {
+
     }
 
     public int getId() {
@@ -131,14 +133,6 @@ public class adConfig {
         this.vast_xml = vast_xml;
     }
 
-    public String getBanner_url() {
-        return banner_url;
-    }
-
-    public void setBanner_url(String banner_url) {
-        this.banner_url = banner_url;
-    }
-
     public String getStatus() {
         return status;
     }
@@ -147,13 +141,21 @@ public class adConfig {
         this.status = status;
     }
 
-    public String getSendPostDevice() {
-        return sendPostDevice;
+    public adVideoPreroll(int id, String ktv_id, String device, String position_type, String position_align, String position_x, String position_y, String width, String height, String time_show, String type_ads, String vast_xml, String status, int issetItem, int sound) {
+        this.id = id;
+        this.ktv_id = ktv_id;
+        this.device = device;
+        this.position_type = position_type;
+        this.position_align = position_align;
+        this.position_x = position_x;
+        this.position_y = position_y;
+        this.width = width;
+        this.height = height;
+        this.time_show = time_show;
+        this.type_ads = type_ads;
+        this.vast_xml = vast_xml;
+        this.status = status;
+        this.issetItem = issetItem;
+        this.sound = sound;
     }
-
-    public void setSendPostDevice(String sendPostDevice) {
-        this.sendPostDevice = sendPostDevice;
-    }
-
-
 }

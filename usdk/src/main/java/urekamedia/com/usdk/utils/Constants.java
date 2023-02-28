@@ -9,4 +9,5 @@ public interface Constants {
 
     String API_ROUTE_AD_CONFIG = "/api/getKTVAds";
     String API_ROUTE_AD_BANNER = "/api/getBanner";
+    String API_ROUTE_VIDEO_PREROLL = "/api/getVideo";
 }

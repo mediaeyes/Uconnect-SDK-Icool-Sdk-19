@@ -17,6 +17,15 @@ public class adInSong {
     private String banner_url;
     private String width;
     private String height;
+    private int issetItem;
+
+    public int getIssetItem() {
+        return issetItem;
+    }
+
+    public void setIssetItem(int issetItem) {
+        this.issetItem = issetItem;
+    }
 
     public adInSong(String time_show, String position, String vast_xml, String banner_url, String width, String height) {
         this.time_show = time_show;
